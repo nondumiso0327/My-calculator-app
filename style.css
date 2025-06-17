@@ -1,3 +1,87 @@
-body{
-    background-color: aquamarine;
+/* General reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #121212;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Table layout */
+table {
+  border-collapse: collapse;
+  border: none;
+  background-color: #353131;
+  box-shadow: 0 10px 25px rgba(87, 83, 83, 0.5);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Buttons */
+td {
+  width: 80px;
+  height: 80px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #7e6363;
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+
+/* Input field */
+input#inputBox {
+  width: 100%;
+  height: 80px;
+  font-size: 32px;
+  text-align: right;
+  padding: 10px;
+  border: none;
+  background-color: #a37e7e;
+  color: rgb(9, 49, 75);
+  outline: none;
+}
+
+/* Digit buttons */
+#digit-button {
+  background-color: #817b7b;
+}
+#digit-button:hover {
+  background-color: #3a3a3a;
+}
+
+/* Operator buttons */
+#operator-button {
+  background-color: #c4ac89;
+  color: #000;
+}
+#operator-button:hover {
+  background-color: #ffa726;
+}
+
+/* AC button */
+.ACbutton {
+  background-color: #4d4545;
+  color: white;
+}
+.ACbutton:hover {
+  background-color: #f19e9e;
+}
+
+/* Equals button */
+td[colspan="4"] {
+  background-color: #2f420f;
+  color: white;
+  font-size: 28px;
+}
+td[colspan="4"]:hover {
+  background-color: #388e3c;
 }
